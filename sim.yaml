@@ -1,0 +1,27 @@
+%YAML:1.0
+---
+# Sim camera calibration for the downward_camera in iris_with_camera.sdf
+# Derived analytically from the SDF (not from chessboard capture):
+#   horizontal_fov = 1.047 rad (60 deg)
+#   image width    = 640
+#   image height   = 480
+# Formulas:
+#   fx = fy = width / (2 * tan(hfov / 2)) = 554.382713
+#   cx = width / 2  = 320
+#   cy = height / 2 = 240
+#   distortion = zeros (Gazebo virtual camera is a perfect pinhole)
+
+image_width: 640
+image_height: 480
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 554.382713,   0.000000, 320.000000,
+             0.000000, 554.382713, 240.000000,
+             0.000000,   0.000000,   1.000000 ]
+distortion_coefficients: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ 0.0, 0.0, 0.0, 0.0, 0.0 ]
