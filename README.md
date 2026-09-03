@@ -1,3 +1,5 @@
+
+
 # Autonomous Multi-Tool Drone Platform
 
 Custom-built autonomous quadrotor with vision-guided target tracking and precision landing. Designed as a modular platform for future tool payloads.
@@ -10,10 +12,14 @@ Custom-built autonomous quadrotor with vision-guided target tracking and precisi
 
 ## Demo
 
-![Autonomous truck tracking and landing](demo.gif)
+
+
+https://github.com/user-attachments/assets/a03a441f-9ab3-48c3-ae6f-aee2c9bf7de4
+
 
 *Full autonomy stack running in Gazebo Harmonic: the drone locates a moving truck via YOLO, tracks it in flight, then transitions to ArUco-guided precision landing on top of it.*
 
+*For higher-resolution video, see [demo.mp4](demo.mp4) directly
 ---
 
 ## Overview
