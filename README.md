@@ -1,17 +1,14 @@
-
-
 # Autonomous Multi-Tool Drone Platform
 
 Custom-built autonomous quadrotor with vision-guided target tracking and precision landing. Designed as a modular platform for future tool payloads.
 
-**Status:** Full autonomy stack working in simulation. Hardware bringup complete, physical flight of the full autonomy stack in progress.
+**Status:** Full autonomy stack working in simulation. Hardware bring-up is complete, and physical flight testing of the full autonomy stack is in progress.
 
-**Portfolio site:** [jas.ca](https://jas.ca) · **Project page:** [jas.ca/projects/drone](https://jas.ca/projects/drone)
+**Portfolio site:** [jaskaranspabla.com](https://www.jaskaranspabla.com) · **Project page:** [jaskaranspabla.com/projects/drone](https://www.jaskaranspabla.com/projects/drone)
 
 ---
 
 ## Demo
-
 
 
 https://github.com/user-attachments/assets/a03a441f-9ab3-48c3-ae6f-aee2c9bf7de4
