@@ -33,6 +33,7 @@ Both cameras feed into the Pi. The Pi forks into two processing paths: OpenCV Ar
 
 ---
 
+
 ## Hardware
 
 | Subsystem | Component |
@@ -47,7 +48,11 @@ Both cameras feed into the Pi. The Pi forks into two processing paths: OpenCV Ar
 | RC | RadioMaster RP4TD-M ELRS |
 | Frame | Custom, PA6-CF printed arms + carbon fiber tubes |
 
-Full wiring diagram: [`docs/electrical.png`](docs/electrical.png)
+### Electrical layout
+
+![Full electrical wiring diagram](docs/electrical.png)
+
+Every wire on the drone was designed, routed, and hand-soldered from scratch. The 6S LiPo feeds the ESC and the Holybro PM02 V3 power module, which then powers the Pixhawk 6C and reports voltage and current telemetry back to it. A separate UBEC taps off the ESC power pads to run the Raspberry Pi, keeping the companion computer isolated from the flight controller's power rail. On the signal side, the ESC runs DShot600 from the Pixhawk's I/O outputs, the ELRS receiver connects on TELEM2 for CRSF control, the GPS and compass run on GPS1, and the Raspberry Pi links to the Pixhawk over MAVLink for the companion connection.
 
 ---
 
