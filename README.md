@@ -22,7 +22,6 @@ The near-term milestone is vision-guided target tracking (YOLO) combined with pr
 
 Development follows a simulation-first workflow: every autonomy behavior is validated in Gazebo with ArduPilot SITL before flying on hardware. The perception stack splits across two compute nodes, with latency-critical fiducial detection running on-board on a Raspberry Pi and heavier YOLO inference offloaded to a laptop over WiFi.
 
-Built by a 3-person team; I own the autonomy software, simulation, and all electrical work, along with a good portion of the mechanical build.
 
 ---
 
